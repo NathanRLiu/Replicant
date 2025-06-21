@@ -6,7 +6,7 @@ export default function Home() {
       <div className="max-w-5xl mx-auto px-4 py-24">
         <header className="mb-16">
           <h1 className="text-5xl font-bold tracking-tight leading-tight">
-            MirrorPopuli
+            Replicant
           </h1>
           <p className="mt-4 text-xl max-w-xl">
             A civic intelligence engine for public officials. Create representative digital twins of your constituents using open data and real-time sentiment.
@@ -44,7 +44,7 @@ export default function Home() {
         </section>
 
         <footer className="mt-24 border-t border-black pt-8 text-sm text-gray-500">
-          <p>© 2025 MirrorPopuli. No rights reserved. Clone responsibly.</p>
+          <p>Made with ❤️ at UC Berkeley AI Hackathon 2025</p>
         </footer>
       </div>
     </main>
