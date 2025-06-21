@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,6 +12,14 @@ export default function Home() {
           <p className="mt-4 text-xl max-w-xl">
             A civic intelligence engine for public officials. Create representative digital twins of your constituents using open data and real-time sentiment.
           </p>
+          <div className="mt-8">
+            <Link 
+              href="/constituents" 
+              className="inline-block bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors font-medium"
+            >
+              View Constituent Agents →
+            </Link>
+          </div>
         </header>
 
         <section className="grid gap-12 md:grid-cols-2">
@@ -38,7 +47,7 @@ export default function Home() {
           <div className="border-t border-black pt-8">
             <h2 className="text-2xl font-semibold">Built for Impact</h2>
             <p className="mt-2 text-base text-gray-800">
-              Lightweight tooling for offices with zero time. Works on phone, desktop, or a rep’s inbox.
+              Lightweight tooling for offices with zero time. Works on phone, desktop, or a rep's inbox.
             </p>
           </div>
         </section>
