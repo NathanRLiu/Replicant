@@ -47,7 +47,7 @@ export default function Home() {
           <div className="border-t border-black pt-8">
             <h2 className="text-2xl font-semibold">Built for Impact</h2>
             <p className="mt-2 text-base text-gray-800">
-              Lightweight tooling for offices with zero time. Works on phone, desktop, or a rep's inbox.
+              Lightweight tooling for offices with zero time. Works on phone, desktop, or a rep&apos;s inbox.
             </p>
           </div>
         </section>

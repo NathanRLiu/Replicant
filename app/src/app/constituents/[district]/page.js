@@ -1,23 +1,30 @@
 import Link from "next/link";
-import ConstituentForm from "./ConstituentForm";
+import PolicyInput from "./PolicyInput";
 
-export default function ConstituentsPage() {
+export default function DistrictPage({ params }) {
+  const district = decodeURIComponent(params.district);
+
   return (
     <main className="min-h-screen bg-white text-black font-sans">
       <div className="max-w-6xl mx-auto px-4 py-12">
         <header className="mb-12">
-          <Link href="/" className="text-blue-600 hover:text-blue-800 mb-4 inline-block">
-            ← Back to Home
+          <Link href="/constituents" className="text-blue-600 hover:text-blue-800 mb-4 inline-block">
+            ← Back to Constituent Generator
           </Link>
-          <h1 className="text-4xl font-bold tracking-tight">Constituent Agents</h1>
+          <h1 className="text-4xl font-bold tracking-tight">Constituent Agents for {district}</h1>
           <p className="mt-4 text-xl text-gray-600 max-w-2xl">
-            Generate AI-powered digital twins representing diverse voices in your district. 
-            Enter a district name below to create representative constituent agents.
+            AI-powered digital twins representing diverse voices in {district}. 
+            Input a policy below to see how constituents might react.
           </p>
         </header>
 
-        {/* Dynamic Constituent Form */}
-        <ConstituentForm />
+        {/* Policy Input Section */}
+        <PolicyInput district={district} />
+
+        {/* Constituents will be loaded here */}
+        <div id="constituents-container" className="mt-12">
+          {/* Constituents will be dynamically loaded */}
+        </div>
 
         {/* Info Section */}
         <div className="mt-16 p-6 bg-gray-50 rounded-lg">
